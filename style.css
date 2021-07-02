@@ -1,0 +1,77 @@
+html {
+    box-sizing: border-box;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 800px;
+    margin: auto;
+    padding: 5%;
+    font-family: "Inter", sans-serif;
+}
+
+.logo {
+    font-size: 3em;
+    font-weight: 700;
+    color: #00B7C3;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1rem 0;
+    letter-spacing: -0.1rem;
+}
+
+nav {
+    text-align: center;
+    font-weight: 500;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0 0 2.5rem 0;
+}
+
+nav a {
+    color: inherit;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    padding: 0.5rem 2rem;
+    display: inline-block;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'DM Serif Display', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+p {
+    line-height: 1.4rem;
+}
+
+img {
+    width: 100%;
+    margin: 1rem 0;
+    display: inline-block;
+}
+
+input, textarea {
+    display: block;
+}
+
+/* Just to fiddle around with jQuery */
+.faux-class {
+    color: blue;
+    background-color: grey;
+}

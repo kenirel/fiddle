@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiddling Around</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <!--  Site header & menu  -->
+    <header>
+        <a class="logo" href="#">
+            <span>Honest Bali Guide</span>
+        </a>
+        <nav>
+        <a href="#">Home</a>
+        <a href="#">Tips</a>
+        <a href="#">Destinations</a>
+        <a href="#">Indulgences</a>
+        </nav>
+    </header>
+    <!--  Main content  -->
+    <article>
+        <header>
+            <h1>Avoiding the most ridiculous scam in Bali: Getting ripped at a convenience store</h1>
+        </header>
+        <div>
+            <p>There are dozens of tourist scams in Bali that I have covered in this blog, but this one - pardon my French - is the most idiotic of them all. To be honest, I didn’t even realize this until I mistakenly clicked on a convenience store nearby Ubud Monkey Forest on Google Maps and saw terrible reviews mostly from foreign travelers, English speakers or not. The scam is obviously stupid but after reading many of the reviews, I understand why a lot travelers fall for it.</p>
+            <h2 id="heading1" class="faux-class">Bali convenience store in a glance</h2>
+            <p>Convenience stores, or minimarkets as the locals normally call them, have long replaced <em>Warung Kelontong</em> (sundry stores that sells variety of daily goods) across popular tourist areas in Bali. These stores considered to be superior in all aspects - it's more comfortable, cheaper and has air conditioning. Some of the common items you can buy here are instant noodles, seasonings, cold drinks, non-prescription medicines, detergents, shampoos, candies, snacks and cigarettes. Oh, and you can top up phone credit and pay household bills as well.</p>
+            <p>Fun Fact: If you’ve been to the Philippines, you’ll realize our Warung Kelontong bears so much resemblance to <em>Sari-Sari</em>.</p>
+            <h2>(Allegedly) a scam: wrong price labels</h2>
+            <p>If you come to any convenience store of any brand around general population area (let’s say in the middle of city of Denpasar) you will never find any trouble, except that sometimes the discount labels are not listed properly or the promo has been expired but hasn’t been removed yet.</p>
+            <p>The reason why I said “allegedly” is while I understand some might consider this as a scam, but it’s never intentional and you can easily get out from it without a fuss.</p>
+            <p>Personally, I usually talk to the cashier to confirm it upon checking out and they will happily cooperate by re-checking the stock of the particular item. If they confirm the discount has indeed been expired, then I will remove the item from my shopping list and pay for the rest. Easy peasy.</p>
+            <h2>The real scam: charging higher than the actual bill and not giving the receipt at all</h2>
+            <p>Now this is something that a cunning convenience store employee in popular tourist areas would do.</p>
+            <p>To begin with, there won’t be anything intentionally wrong with the price labels but once you go to cashier to check out, this is where the scam starts to kick off.</p>
+            <p>The cashier will mentioned to you the total price, however, once you were given the change, they won't hand you the receipt. This is because the price they uttered from their mouth is way higher than what’s in the receipt!</p>
+            <p>I’ve read many Google reviews for many convenience stores around Ubud specifically mentioning this scheme and the customers (all of them foreign travelers) seem to only have realized the scam afterwards. Unfortunately they couldn’t do anything because one cannot by law claim to be short-changed after exiting the place of transaction.</p>
+            <p>Some others were smart enough to ask for receipt and the cashier, being cornered, just smoothed the situation by telling the customers that they were "mistaken" about the total price (which was already inflated in the beginning) and the customer was supposed to pay lower as stated on the receipt.</p>
+            <p>What’s worse is that some places even have completely shameless employees who will throw a hot argument if asked for receipt. I have no answer to this other than reporting them to the authorities.</p>
+        </div>
+    </article>
+    <form>
+        <label for="name">Your Name</label><br/>
+        <input type="text" placeholder="Your Name" id="name"><br/>
+        <label for="replyto">Your Email</label><br/>
+        <input type="email" placeholder="Your Email" id="replyto"><br/>
+        <label>Favorite Fruit</label><br/>
+        <select id="sel-fruit" name="sel-fruit">
+            <option value="banana">Banana</option>
+            <option value="pineapple">Pineapple</option>
+        </select><br/>
+        <textarea placeholder="Your Message" id="message" rows="8"></textarea><br/>
+        <button type="submit" id="submitmessage">Submit</button>
+    </form>
+    <br/>
+    <hr>
+    <button type="submit" id="btn-tab-1">Tab 1</button>
+    <button type="submit" id="btn-tab-2">Tab 2</button>
+    <p class="tab-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nesciunt ab quos eum dolorem dolores unde quia officiis nam provident, iure cupiditate quasi fugit, voluptatum sunt asperiores voluptas dignissimos accusantium!</p>
+    <br />
+    <button type="submit" id="btn-tab-toggle">Toggle Tab</button>
+    <p class="toggle-tab-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere voluptatum non numquam sapiente dolores qui minima quaerat sed nulla ut, consequatur velit tempore quo asperiores architecto eveniet ab placeat facilis?</p>
+    <hr>
+    <hr>
+    <div id="container1">
+        <button id="btn1">Button 1</button>
+        <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quae labore fugiat inventore tempore? Necessitatibus, quidem consequuntur. Quisquam, eaque nemo quae eveniet laudantium rerum tempore magnam? Similique adipisci unde dolore!</p>
+        <p class="para2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium molestiae necessitatibus vero corporis quis sint quaerat provident tempore voluptatem architecto? Repudiandae impedit, unde sunt quis nulla nemo.</p>
+        <div id=myDiv></div>
+        <input type="text" id="newItem">
+        <ul>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+        </ul>
+        <a id="link-demo" href="https://www.google.com">Google</a>
+    </div>   
+
+    <!----------------------------- All javascripts goes here ------------------------------>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="vanilla.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+</body>
+</html>
