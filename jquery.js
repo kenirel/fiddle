@@ -141,16 +141,16 @@ $('document').ready(function(){
   // alert($('#myDiv').text()); // This show the manipulated content on browser alert upon loading
 
   // 5. Add content with HTML tag to an element 
-  $('ul').append('<li>Append List Item</li>'); // Add the content to the end of the element
-  $('ul').prepend('<li>Prepend List Item</li>'); // Add the content to the beginning of the element
+  // $('ul').append('<li>Append List Item</li>'); // Add the content to the end of the element
+  // $('ul').prepend('<li>Prepend List Item</li>'); // Add the content to the beginning of the element
 
   // 6. Send an element before/after the target element
   // $('.para1').appendTo('.para2'); // send to after
   // $('.para1').prependTo('.para2'); // send to before
 
   // 7. Add element before/after an element, similar to CSS pseudo-element
-  $('ul').before('<h3>Hello</h3>');
-  $('ul').after('<h3>World</h3>');
+  // $('ul').before('<h3>Hello</h3>');
+  // $('ul').after('<h3>World</h3>');
 
   // 8. Remove an element
   // $('ul').empty(); // similar to CSS display: none
@@ -174,8 +174,109 @@ $('document').ready(function(){
     }
   })
 
-  // 12. Arrays method
-  
+  // 12. Appending arrays into HTML element
+  var myArr = ['Molly', 'Candy', 'Carmel', 'Nikki', 'Ella'];
+  $.each(myArr, function(i, val){ // loop through an array
+    // console.log(val);
+    $('#users').append('<li>' + val + '</li>');
+  })
+
+  // 13. Turn HTML elements into arrays
+  var newArr = $('ul#list-demo li').toArray();
+  $.each(newArr, function(i, val){
+    console.log(val.innerHTML);
+  });
+
+
+  // EFFECTS & ANIMATION
+  // 1. Fade
+  $('#btnFadeOut').click(function(){
+    $('#inner-box').fadeOut(2000, function(){
+      $('#btnFadeOut').text('It\'s Gone!'); // Change the button text after the fadeout finishes
+    }); 
+  });
+  $('#btnFadeIn').click(function(){
+    $('#inner-box').fadeIn(1000);
+  });
+  $('#btnFadeTog').click(function(){
+    // $('#inner-box').fadeToggle(1000);
+    $('#inner-box').fadeToggle(500);
+  });
+
+  // 2. Slide - applying CSS min-height will cause some issue with the animation
+  $('#btnSlideUp').click(function(){
+    $('#inner-box').slideUp(1000);
+  });
+  $('#btnSlideDown').click(function(){
+    $('#inner-box').slideDown(1000);
+  });
+  $('#btnSlideTog').click(function(){
+    $('#inner-box').slideToggle(1000);
+  });
+  $('#btnSlideStop').click(function(){
+    $('#inner-box').stop(); // watchout for the toggle behavior when you use this
+  });
+
+  // 3. Move
+  $('#moveLeft').click(function(){
+    $('#inner-box-2').animate({
+      right: '500', // push the item 500px from the right (goes to the left)
+      width: '300px',
+      height: '300px',
+      opacity: '0.5'
+    });
+  });
+  $('#moveRight').click(function(){
+    $('#inner-box-2').animate({
+      right: '0', // push the item 0px from the right (goes back to its original position)
+      width: '100px',
+      height: '100px',
+      opacity: '1'
+    });
+  });
+  $('#moveAround').click(function(){
+    var movingbox = $('#inner-box-2');
+    movingbox.animate({
+      left: 300,
+      top: 0
+    });
+    movingbox.animate({
+      left: 300,
+      top: 300,
+    });
+    movingbox.animate({
+      left: 0,
+      top: 300
+    });
+    movingbox.animate({
+      left: 0,
+      top: 0
+    });
+  });
+
+  // AJAX
+  // 1. Bringing content from another file to an element
+  // 1.1 load method
+  // $('#result').load('test.html', function(responseTxt, statusTxt, xhr){
+  //   if (statusTxt == 'success'){
+  //     alert('The banana content is added successfully.');
+  //   }
+  //   else if (statusTxt == 'error'){
+  //     alert('This ain\'t your banana, chief');
+  //   }
+  // });
+
+  // 1.2 get method
+  // $.get('test.html', function(data){
+  //   $('#result').html(data);
+  // });
+
+  // 1.3 getJSON
+  $.getJSON('users.json', function (data){
+    $.each(data, function(i, user){
+      $('ul#users').append('<li>' + user.firstName + '</li>')
+    });
+  });
 
 
 

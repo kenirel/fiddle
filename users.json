@@ -1,0 +1,27 @@
+[
+    {
+        "firstName":"Lewis",
+        "lastName":"Hamilton",
+        "email":"ham44@mercedesamg.com"
+    },
+    {
+        "firstName":"Kimi",
+        "lastName":"Raikkonen",
+        "email":"kimi@alfaromeof1.com"
+    },
+    {
+        "firstName":"Charles",
+        "lastName":"Leclerc",
+        "email":"lec16@scuderiaferrari.com"
+    },
+    {
+        "firstName":"Lando",
+        "lastName":"Norris",
+        "email":"lando.norris@mclaren.com"
+    },
+    {
+        "firstName":"Sebastian",
+        "lastName":"Vettel",
+        "email":"seb@astonmartinf1.com"
+    }
+]
